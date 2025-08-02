@@ -16,7 +16,11 @@ A Next.js Progressive Web App (PWA) that provides offline-first voice assistant 
 A modern PWA Voice Assistant built with Next.js.
 
 ## 🚀 Live Demo
-👉 [AI-voice-assistant](https://voice-assistant-pwa.onrender.com/))
+👉 [Deployed-Assistant](https://voice-assistant-pwa.onrender.com/))
+
+## 🎥 Demo Video
+Watch a quick walkthrough of the project:  
+▶️ [Demo Video](https://your-demo-video-link.com)
 
 
 ## Quick Start

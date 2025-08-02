@@ -18,10 +18,6 @@ A modern PWA Voice Assistant built with Next.js.
 ## 🚀 Live Demo
 👉 [Deployed-Assistant](https://voice-assistant-pwa.onrender.com/))
 
-## 🎥 Demo Video
-Watch a quick walkthrough of the project:  
-▶️ [Demo Video](https://your-demo-video-link.com)
-
 
 ## Quick Start
 

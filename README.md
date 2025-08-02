@@ -22,20 +22,19 @@ A modern PWA Voice Assistant built with Next.js.
 ## Quick Start
 
 1. **Clone and Install**:
-   \`\`\`bash
+   
    npm install
-   \`\`\`
+
 
 2. **Add OpenAI API Key**:
-   \`\`\`bash
+   
    cp .env.local.example .env.local
    # Edit .env.local and add your OpenAI API key
-   \`\`\`
+   
 
 3. **Run Development Server**:
-   \`\`\`bash
+   
    npm run dev
-   \`\`\`
 
 4. **Open**: http://localhost:3000
 
@@ -48,7 +47,7 @@ A modern PWA Voice Assistant built with Next.js.
 
 ## Project Structure
 
-\`\`\`
+
 ├── app/
 │   ├── api/chat/          # OpenAI API integration
 │   ├── components/        # React components
@@ -60,7 +59,7 @@ A modern PWA Voice Assistant built with Next.js.
 │   ├── manifest.json     # PWA manifest
 │   └── sw.js            # Service worker
 └── .env.local           # Environment variables
-\`\`\`
+
 
 ## Technologies
 
@@ -73,4 +72,9 @@ A modern PWA Voice Assistant built with Next.js.
 
 ## License
 
-MIT License
+This project is licensed under the MIT License.
+
+## Contributing
+
+Pull requests are welcome!
+For major changes, please open an issue first to discuss what you’d like to change.

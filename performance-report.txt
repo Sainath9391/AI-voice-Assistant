@@ -1,0 +1,38 @@
+# AI Voice Assistant – Performance Report
+
+ **Average Response Time**
+- ~**1.1 seconds** (measured over 10 queries to OpenAI API)
+- Optimized through caching, local speech-to-text, and minimal frontend latency
+
+
+**Initial Cache Size**
+- Total static assets cached on first load: **~1.5 MB**
+- Includes:
+  - UI components
+  - Tailwind CSS styles
+  - PWA manifest & service worker
+  - Icons & assets
+
+
+ **Offline Capability**
+- Fully installable as a PWA (Add to Home Screen prompt)
+- Loads UI instantly from cache, even with no network
+- Local speech recognition (voice input) still works offline
+- AI-generated responses require network; offline fallback gracefully informs the user
+
+
+ **PWA & Performance Scores**
+- Lighthouse PWA score: **100/100**
+- Fast initial page load & interaction
+
+
+**Test Environment**
+
+- Tested on:
+  - Chrome (desktop)
+  - Chrome on Android
+- Simulated slow 4G & offline modes for caching test
+
+
+**Date:** August 2025  
+**Prepared by:** Pendalwar Sainath

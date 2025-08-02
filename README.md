@@ -11,6 +11,14 @@ A Next.js Progressive Web App (PWA) that provides offline-first voice assistant 
 - ⚡ **Performance Metrics**: Real-time latency tracking
 - 🎯 **Sub-1.2s Response Time**: Optimized for speed
 
+# AI Voice Assistant 🎙️
+
+A modern PWA Voice Assistant built with Next.js.
+
+## 🚀 Live Demo
+👉 [AI-voice-assistant](https://voice-assistant-pwa.onrender.com/))
+
+
 ## Quick Start
 
 1. **Clone and Install**:

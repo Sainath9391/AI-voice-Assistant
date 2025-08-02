@@ -1,4 +1,4 @@
-# Voice Assistant PWA
+# AI-Voice-Assistant 
 
 A Next.js Progressive Web App (PWA) that provides offline-first voice assistant capabilities with local speech-to-text, OpenAI integration, and text-to-speech synthesis.
 

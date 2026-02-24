@@ -2,8 +2,6 @@
 
 <br/>
 
-<div align="center">
-<br/>
 ```
  █████╗ ██╗    ██╗   ██╗ ██████╗ ██╗ ██████╗███████╗
 ██╔══██╗██║    ██║   ██║██╔═══██╗██║██╔════╝██╔════╝
@@ -21,8 +19,8 @@
 
 # 🎙️ AI Voice Assistant
 
-**A Modern Offline-First Voice Assistant**  
-_Real-time Speech-to-Text · GPT Integration · Text-to-Speech · Sub-1.2s Response_
+**A Modern Offline-First AI Assistant with Voice, Chat & Beyond**  
+_Real-time Speech-to-Text · GPT Integration · Text-to-Speech · Chat Interface · Sub-1.2s Response_
 
 <br/>
 
@@ -31,6 +29,8 @@ _Real-time Speech-to-Text · GPT Integration · Text-to-Speech · Sub-1.2s Respo
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI_GPT-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
 [![PWA](https://img.shields.io/badge/PWA_Ready-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)](#)
+[![Voice](https://img.shields.io/badge/Voice_Enabled-FF4F00?style=for-the-badge&logo=googlepodcasts&logoColor=white)](#)
+[![Chat](https://img.shields.io/badge/Chat_Interface-1D9BF0?style=for-the-badge&logo=chatbot&logoColor=white)](#)
 
 <br/>
 
@@ -49,26 +49,37 @@ _Real-time Speech-to-Text · GPT Integration · Text-to-Speech · Sub-1.2s Respo
 
 </div>
 
-## What Is This?
+## 🧠 What Is This?
 
-**AI Voice Assistant** is a Next.js Progressive Web App that puts a full AI voice pipeline directly in your browser — no native app, no backend servers, no friction.
+**AI Voice Assistant** is a Next.js Progressive Web App that brings a **full-featured AI assistant** directly to your browser — powered by OpenAI GPT and built around a seamless voice-first experience, with text chat, real-time transcription, and spoken responses all in one.
 
-Speak → Transcribe → Think → Respond. All in under **1.2 seconds.**
+No native app. No backend servers. No friction.
 
 ```
-🎙️  Microphone  →  📝  STT (Web Worker)  →  🤖  OpenAI GPT  →  🔊  TTS (Web Worker)  →  🎧  You
-                          ↑                                              ↑
-                   Background thread                            Background thread
-                   (non-blocking)                               (non-blocking)
+🎙️ Voice Mode          💬 Chat Mode
+──────────────         ────────────
+Mic Input              Text Input
+    ↓                      ↓
+STT Worker             Direct Input
+    └──────────┬────────────┘
+               ↓
+       🤖 OpenAI GPT
+               ↓
+    ┌──────────┴──────────┐
+    ↓                     ↓
+🔊 TTS Worker         💬 Chat Display
+Audio Playback        Text Response
+
+     All processing: sub-1.2s end-to-end
 ```
 
-Built for developers and power users who want a **fast, installable, offline-capable** AI voice experience — without the bloat.
+Built for developers and power users who want a **fast, installable, offline-capable** AI assistant — voice or chat, your choice, without the bloat.
 
 <br/>
 
 ---
 
-##  Feature Breakdown
+## ✨ Feature Breakdown
 
 <table>
 <tr>
@@ -130,6 +141,15 @@ Built for developers and power users who want a **fast, installable, offline-cap
 - Scalable component structure  
 
 </td>
+<td width="50%">
+
+### 💬 Chat Interface
+- Text-based input alongside voice  
+- Persistent conversation display  
+- Message history & context passing  
+- Seamless voice ↔ chat switching  
+
+</td>
 </tr>
 </table>
 
@@ -144,9 +164,9 @@ ai-voice-assistant/
 │
 ├── app/
 │   ├── api/
-│   │   └── chat/               # OpenAI API route (serverless)
+│   │   └── chat/               # 🤖 OpenAI API route (serverless)
 │   │       └── route.ts
-│   ├── components/             # Feature components
+│   ├── components/             # 🧩 Feature components
 │   │   ├── VoiceButton.tsx
 │   │   ├── ResponseDisplay.tsx
 │   │   └── LatencyTracker.tsx
@@ -155,20 +175,20 @@ ai-voice-assistant/
 │   └── globals.css             # Global + Tailwind styles
 │
 ├── components/
-│   └── ui/                     # Reusable UI primitives
+│   └── ui/                     # 🎨 Reusable UI primitives
 │
-├── lib/                        # Utilities & helpers
+├── lib/                        # 🛠️ Utilities & helpers
 │
 ├── public/
 │   ├── workers/
-│   │   ├── stt.worker.js       # Speech-to-Text Web Worker
-│   │   └── tts.worker.js       # Text-to-Speech Web Worker
-│   ├── manifest.json           # PWA manifest
-│   └── sw.js                   # Service Worker
+│   │   ├── stt.worker.js       # 🎙️ Speech-to-Text Web Worker
+│   │   └── tts.worker.js       # 🔊 Text-to-Speech Web Worker
+│   ├── manifest.json           # 📱 PWA manifest
+│   └── sw.js                   # ⚙️  Service Worker
 │
-├── .env.local                  # Environment variables (not committed)
-├── .env.local.example          # Env template
-├── next.config.ts              # Next.js config
+├── .env.local                  # 🔐 Environment variables (not committed)
+├── .env.local.example          # 📋 Env template
+├── next.config.ts              # ⚙️  Next.js config
 └── tsconfig.json
 ```
 
@@ -176,7 +196,7 @@ ai-voice-assistant/
 
 ---
 
-##  Getting Started
+## ⚡ Getting Started
 
 ### Prerequisites
 
@@ -188,20 +208,20 @@ ai-voice-assistant/
 
 <br/>
 
-### 1️. Clone the Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/ai-voice-assistant.git
 cd ai-voice-assistant
 ```
 
-### 2️. Install Dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3️. Configure Environment Variables
+### 3️⃣ Configure Environment Variables
 
 ```bash
 cp .env.local.example .env.local
@@ -216,7 +236,7 @@ OPENAI_API_KEY=sk-your_openai_api_key_here
 
 > 🔒 **Never commit `.env.local` to version control.**
 
-### 4️. Start the Development Server
+### 4️⃣ Start the Development Server
 
 ```bash
 npm run dev
@@ -234,6 +254,7 @@ http://localhost:3000
 
 ## 🎯 How to Use
 
+**🎙️ Voice Mode**
 ```
 1.  Open the app in a modern browser (Chrome recommended for full STT support)
 2.  Click the 🎙️  microphone button to start recording
@@ -243,7 +264,15 @@ http://localhost:3000
 6.  Listen as the response is spoken back to you via TTS
 ```
 
-> 💡 **Tip:** Install as a PWA from your browser's address bar for a native app-like experience.
+**💬 Chat Mode**
+```
+1.  Type your message in the chat input box
+2.  Press Enter or click Send
+3.  Read the AI response in the conversation thread
+4.  Optionally click 🔊 to have the response read aloud
+```
+
+> 💡 **Tip:** Install as a PWA from your browser's address bar for a native app-like experience on any device.
 
 <br/>
 
@@ -265,19 +294,19 @@ http://localhost:3000
 
 ## 🔮 Roadmap
 
-- [ ] **Conversation memory** — contextual multi-turn dialogue  
-- [ ] **Multi-language support** — STT & TTS in 10+ languages  
-- [ ] **Secure session handling** — auth-gated usage  
-- [ ] **Conversation analytics** — history, usage stats, export  
-- [ ] **Voice themes** — custom TTS voice selection  
-- [ ] **Dark / Light mode toggle**  
-- [ ] **Streaming responses** — token-by-token TTS output  
+- [ ] 🧠 **Conversation memory** — contextual multi-turn dialogue  
+- [ ] 🌍 **Multi-language support** — STT & TTS in 10+ languages  
+- [ ] 🔐 **Secure session handling** — auth-gated usage  
+- [ ] 📊 **Conversation analytics** — history, usage stats, export  
+- [ ] 🎨 **Voice themes** — custom TTS voice selection  
+- [ ] 🌙 **Dark / Light mode toggle**  
+- [ ] 📡 **Streaming responses** — token-by-token TTS output  
 
 <br/>
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome and appreciated!
 
@@ -292,7 +321,7 @@ git commit -m "feat: add amazing feature"
 # 4. Push to your fork
 git push origin feature/amazing-feature
 
-# 5. Open a Pull Request 
+# 5. Open a Pull Request 🚀
 ```
 
 Please follow [conventional commits](https://www.conventionalcommits.org/) and keep PRs focused.

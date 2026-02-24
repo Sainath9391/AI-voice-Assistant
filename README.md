@@ -2,13 +2,21 @@
 
 <br/>
 
+<div align="center">
+<br/>
 ```
-██╗   ██╗ ██████╗ ██╗ ██████╗███████╗
-██║   ██║██╔═══██╗██║██╔════╝██╔════╝
-██║   ██║██║   ██║██║██║     █████╗  
-╚██╗ ██╔╝██║   ██║██║██║     ██╔══╝  
- ╚████╔╝ ╚██████╔╝██║╚██████╗███████╗
-  ╚═══╝   ╚═════╝ ╚═╝ ╚═════╝╚══════╝
+ █████╗ ██╗    ██╗   ██╗ ██████╗ ██╗ ██████╗███████╗
+██╔══██╗██║    ██║   ██║██╔═══██╗██║██╔════╝██╔════╝
+███████║██║    ██║   ██║██║   ██║██║██║     █████╗  
+██╔══██║██║    ╚██╗ ██╔╝██║   ██║██║██║     ██╔══╝  
+██║  ██║██║     ╚████╔╝ ╚██████╔╝██║╚██████╗███████╗
+╚═╝  ╚═╝╚═╝     ╚═══╝   ╚═════╝ ╚═╝ ╚═════╝╚══════╝
+     █████╗ ███████╗███████╗██╗███████╗████████╗ █████╗ ███╗   ██╗████████╗
+    ██╔══██╗██╔════╝██╔════╝██║██╔════╝╚══██╔══╝██╔══██╗████╗  ██║╚══██╔══╝
+    ███████║███████╗███████╗██║███████╗   ██║   ███████║██╔██╗ ██║   ██║   
+    ██╔══██║╚════██║╚════██║██║╚════██║   ██║   ██╔══██║██║╚██╗██║   ██║   
+    ██║  ██║███████║███████║██║███████║   ██║   ██║  ██║██║ ╚████║   ██║   
+    ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚══════╝  ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚═╝   
 ```
 
 # 🎙️ AI Voice Assistant
@@ -41,7 +49,7 @@ _Real-time Speech-to-Text · GPT Integration · Text-to-Speech · Sub-1.2s Respo
 
 </div>
 
-## 🧠 What Is This?
+## What Is This?
 
 **AI Voice Assistant** is a Next.js Progressive Web App that puts a full AI voice pipeline directly in your browser — no native app, no backend servers, no friction.
 
@@ -60,7 +68,7 @@ Built for developers and power users who want a **fast, installable, offline-cap
 
 ---
 
-## ✨ Feature Breakdown
+##  Feature Breakdown
 
 <table>
 <tr>
@@ -136,9 +144,9 @@ ai-voice-assistant/
 │
 ├── app/
 │   ├── api/
-│   │   └── chat/               # 🤖 OpenAI API route (serverless)
+│   │   └── chat/               # OpenAI API route (serverless)
 │   │       └── route.ts
-│   ├── components/             # 🧩 Feature components
+│   ├── components/             # Feature components
 │   │   ├── VoiceButton.tsx
 │   │   ├── ResponseDisplay.tsx
 │   │   └── LatencyTracker.tsx
@@ -147,20 +155,20 @@ ai-voice-assistant/
 │   └── globals.css             # Global + Tailwind styles
 │
 ├── components/
-│   └── ui/                     # 🎨 Reusable UI primitives
+│   └── ui/                     # Reusable UI primitives
 │
-├── lib/                        # 🛠️ Utilities & helpers
+├── lib/                        # Utilities & helpers
 │
 ├── public/
 │   ├── workers/
-│   │   ├── stt.worker.js       # 🎙️ Speech-to-Text Web Worker
-│   │   └── tts.worker.js       # 🔊 Text-to-Speech Web Worker
-│   ├── manifest.json           # 📱 PWA manifest
-│   └── sw.js                   # ⚙️  Service Worker
+│   │   ├── stt.worker.js       # Speech-to-Text Web Worker
+│   │   └── tts.worker.js       # Text-to-Speech Web Worker
+│   ├── manifest.json           # PWA manifest
+│   └── sw.js                   # Service Worker
 │
-├── .env.local                  # 🔐 Environment variables (not committed)
-├── .env.local.example          # 📋 Env template
-├── next.config.ts              # ⚙️  Next.js config
+├── .env.local                  # Environment variables (not committed)
+├── .env.local.example          # Env template
+├── next.config.ts              # Next.js config
 └── tsconfig.json
 ```
 
@@ -168,7 +176,7 @@ ai-voice-assistant/
 
 ---
 
-## ⚡ Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -180,20 +188,20 @@ ai-voice-assistant/
 
 <br/>
 
-### 1️⃣ Clone the Repository
+### 1️. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/ai-voice-assistant.git
 cd ai-voice-assistant
 ```
 
-### 2️⃣ Install Dependencies
+### 2️. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Configure Environment Variables
+### 3️. Configure Environment Variables
 
 ```bash
 cp .env.local.example .env.local
@@ -208,7 +216,7 @@ OPENAI_API_KEY=sk-your_openai_api_key_here
 
 > 🔒 **Never commit `.env.local` to version control.**
 
-### 4️⃣ Start the Development Server
+### 4️. Start the Development Server
 
 ```bash
 npm run dev
@@ -257,19 +265,19 @@ http://localhost:3000
 
 ## 🔮 Roadmap
 
-- [ ] 🧠 **Conversation memory** — contextual multi-turn dialogue  
-- [ ] 🌍 **Multi-language support** — STT & TTS in 10+ languages  
-- [ ] 🔐 **Secure session handling** — auth-gated usage  
-- [ ] 📊 **Conversation analytics** — history, usage stats, export  
-- [ ] 🎨 **Voice themes** — custom TTS voice selection  
-- [ ] 🌙 **Dark / Light mode toggle**  
-- [ ] 📡 **Streaming responses** — token-by-token TTS output  
+- [ ] **Conversation memory** — contextual multi-turn dialogue  
+- [ ] **Multi-language support** — STT & TTS in 10+ languages  
+- [ ] **Secure session handling** — auth-gated usage  
+- [ ] **Conversation analytics** — history, usage stats, export  
+- [ ] **Voice themes** — custom TTS voice selection  
+- [ ] **Dark / Light mode toggle**  
+- [ ] **Streaming responses** — token-by-token TTS output  
 
 <br/>
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome and appreciated!
 
@@ -284,7 +292,7 @@ git commit -m "feat: add amazing feature"
 # 4. Push to your fork
 git push origin feature/amazing-feature
 
-# 5. Open a Pull Request 🚀
+# 5. Open a Pull Request 
 ```
 
 Please follow [conventional commits](https://www.conventionalcommits.org/) and keep PRs focused.
